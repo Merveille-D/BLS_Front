@@ -1,0 +1,11 @@
+{
+  "welcome": "Welcome to the Bank's Legal & Company Secretariat Digital Platform !",
+  "login": "Se connecter",
+  "identifier": "Identifiant",
+  "password": "Mot de passe",
+  "loginSuccess": "Connexion réussie",
+  "invalidCredentials": "Identifiants invalides",
+  "loginTitle": "Connectez-vous",
+  "loginDescription": "Veuillez entrer vos identifiants de connexion",
+  "copyright": "AfrikSkills SAS - Tous droits réservés"
+}

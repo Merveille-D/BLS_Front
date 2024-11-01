@@ -1,0 +1,39 @@
+export default function LitigationIcon(props) {
+  return (
+    <svg
+      width="64"
+      height="64"
+      viewBox="0 0 64 64"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+      {...props}
+    >
+      <rect
+        width="64"
+        height="64"
+        fill="url(#pattern0)"
+        fillOpacity="0.83"
+      />
+      <defs>
+        <pattern
+          id="pattern0"
+          patternContentUnits="objectBoundingBox"
+          width="1"
+          height="1"
+        >
+          <use
+            xlinkHref="#image0_1495_653"
+            transform="scale(0.02)"
+          />
+        </pattern>
+        <image
+          id="image0_1495_653"
+          width="50"
+          height="50"
+          xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADSklEQVR4nO2YzW9MURiHr/FRpKzqIyGtjWipEFb4A6QlESF0LC2URCQ29Q9ofa+0EjtaC41YaAWRNHTYokJ8BAukoqLqY6Hi45Ej78TbuvfOuTPnzp3G/JKbzLznPe/cZ849v/POeF5Z/4mAacAR4A0wCBwyMW+iCTjMv2pL6mb2AKflOgv0AQ+BIeAn8B14DpwHtgFT1VyzCkZrgXXyejApkBGi6SXQJHP/SNUa877YICuBfcA34AvQCNQD84HJZgWAOmA/8FgB9ZUUiBHQoG6wwQuQgO0E3uslKiWQHnVfPRb5c4DOIBDgOvAI+CDvR2U1u4EdQEUcEDXAD/mwUXldYzk3CCSXhoC92jhcgLRK8S65jFoLBNkIrADmASlguuy7A8ADlfcM2OzqQHurLNRcSCznwZbvHgE2yaOX1Q1gPTApX5AmKTSgYgMSa4oLxAiYIo+Xtv/bXj4C+qVAs4rtllh/nCBG8ti9kGmvgVteVAFLgV/AZ2CWilcCn6T48phBNqjVaIwMIUU6pMBJn7F2GWuPGeSyAunNB0J/68t8xo3DIDmVcYBQgO17PvvgZkhOZvz+cQzSJumdyvajdc7AXZm4PSQnLTn3XYMw1vbXKNt/Z33qq3Y7dNL4M8YxSNrH9u9ILG0Lck4mHIyw/F2OQTKSukvFmiWWsYGoAr7KxlpkkV+tNuRcFyA4sH1Peh2jS7kg1JxemdPiCKSjINs3fYw0afnKnMCpQkDGfev1PuN1arVmh7UDTwsAeeIAJLsP+qO0TX5JWyXJEC8JTPybXyu5+LXbeYBkG9J0FEcLSswePq/CNpUZk0bO6ExAjjWIOiuGwn4iiO2bnEDbzybOAK5J4qhsvlXATLlWA6dkzOiK+WHkAMT69CaH7evECuC4WGuQzNjRHN+eFYjYvnU/xdg+rCpXftYlTsizOyLXPYGstZhvC9IStcMlxPadywYkDttPCiQl1u3M9hMBkfgWl7afGIiMdbqy/aRBjO1fdWH7iYKow+5YobafOIgr2y8ZkJJTGaTUVF6RUtOEWBFgIXBBtQouZGpdBBYXE2KY+DQMLCgGiFkJ5JCqdljX/E9mahp1u6ob9oEuH6cgfSwGSFHkleVNbP0GLscZu2uOhqcAAAAASUVORK5CYII="
+        />
+      </defs>
+    </svg>
+  );
+}
