@@ -2,7 +2,7 @@ import { useForm, useFormContext } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 const validationSchema = z.object({
-  username: z
+  email: z
     .string({
       required_error: "L'identifiant est requis",
     })
@@ -16,7 +16,7 @@ export const useLoginForm = () => {
   const form = useForm({
     resolver: zodResolver(validationSchema),
     defaultValues: {
-      username: "",
+      email: "",
       password: "",
     },
   });

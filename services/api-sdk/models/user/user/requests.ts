@@ -20,7 +20,7 @@ export const getAllUsers = async () => {
             firstname: item.firstname,
             lastname: item.lastname,
             email: item.email,
-            username: item.username,
+            username: item.name,
           };
         } catch (e) {
           return null;
@@ -44,7 +44,7 @@ export const getCurrentUser = async () => {
         firstname: item.firstname,
         lastname: item.lastname,
         email: item.email,
-        username: item.username,
+        username: item.name,
       };
     } catch (e) {
       throw new ApiError("Failed to parse current user");
@@ -61,7 +61,7 @@ export const login = async (args) => {
   const response = await fetchService.post(
     "/login",
     JSON.stringify({
-      username: args.username,
+      email: args.email,
       password: args.password,
     }),
     {

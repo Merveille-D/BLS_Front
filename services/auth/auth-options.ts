@@ -9,18 +9,21 @@ const authOptions = {
       name: "Credentials",
       credentials: {},
       async authorize(credentials) {
-        const { username, password } = credentials;
-        const accessToken = await login({ username, password });
+        const { email, password } = credentials;
+        console.log("Authorize credentials:", credentials);
+        const accessToken = await login({ email, password });
+        console.log("access_token:",accessToken);
         return accessToken
           ? {
-              id: username,
-              name: username,
+              id: email,
+              name: email,
               accessToken,
             }
           : null;
       },
     }),
   ],
+  
   callbacks: {
     async jwt({ token, user }) {
       return { ...token, ...user };

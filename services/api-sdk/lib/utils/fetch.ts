@@ -12,6 +12,7 @@ export class FetchService {
     this.requestInterceptor = options?.requestInterceptor;
     this.responseInterceptor = options?.responseInterceptor;
     this.baseUrl = options?.baseUrl;
+    console.log("Base URL:", this.baseUrl);
   }
   /**
    * @public
@@ -41,6 +42,7 @@ export class FetchService {
       new URL(formattedUrl, this.baseUrl),
       newOptions,
     );
+    console.log("Fetching URL:", new URL(formattedUrl, this.baseUrl));
     return this.responseInterceptor?.(response) ?? response;
   }
   /**

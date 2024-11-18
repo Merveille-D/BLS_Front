@@ -7,19 +7,28 @@ import { getDefaultLocaleServer } from "@/config/locales/utils/server";
  * Fetch service instance
  * @type {FetchService}
  */
+console.log('API URL:', process.env.API_URL);
 export const fetchService = new FetchService({
   baseUrl: process.env.API_URL,
   requestInterceptor: async () => {
+
+
+
     const token = await getToken();
     const locale = await getDefaultLocaleServer();
-    return {
+    const headers = {
       cache: "no-store",
-      headers: {
-        Authorization: token ? `Bearer ${token.accessToken}` : "",
-        "X-Locale": locale,
-      },
+      "X-Locale": locale,
+    };
+    
+    if (token?.accessToken) {
+      headers["Authorization"] = `Bearer ${token.accessToken}`;
+    }
+    return {
+      headers
     };
   },
+  
   responseInterceptor: (response) => {
     if (response.status === 401) {
       redirect(AuthRoutes.logout);

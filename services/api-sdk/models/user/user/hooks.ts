@@ -62,13 +62,14 @@ export const useLogin = (options) => {
   );
   const mutation = useMutation({
     mutationFn: async (args) => {
+      console.log("Login arguments:", args);
       const response = await signIn("credentials", {
-        username: args.username,
+        email: args.email,
         password: args.password,
         redirect: false,
       });
       if (!response?.ok) {
-        throw new Error("Invalid credentials");
+        throw new Error(response.error || "Invalid credentials");
       }
     },
     mutationKey: LOGIN_MUTATION_KEY,

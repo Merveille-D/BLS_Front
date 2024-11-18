@@ -59,7 +59,7 @@ export default function LoginForm() {
       >
         <FormField
           control={form.control}
-          name="username"
+          name="email"
           render={({ field }) => (
             <FormItem className="col-span-2">
               <FormLabel>
